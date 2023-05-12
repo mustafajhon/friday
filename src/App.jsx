@@ -11,6 +11,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
+
+      <p style={{ color: "red" }} className="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+      </p>
     </div>
   );
 }

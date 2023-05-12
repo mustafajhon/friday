@@ -1,6 +1,5 @@
 .App-logo {
   height: 20vmin;
-  pointer-events: none;
 }
 .App {
   background-color: #282c34;
@@ -8,29 +7,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: baseline;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 .head {
-  background-color: aquamarine;
-  border-radius: 4rem;
-  color: black;
-}
-.head:hover {
   background-color: #282c34;
   color: white;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.head:hover {
+  background-color: aquamarine;
+  border-radius: 4rem;
+  color: black;
 }
