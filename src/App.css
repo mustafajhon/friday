@@ -1,7 +1,13 @@
-.App-logo {
-  height: 20vmin;
+/* Universal Variables */
+:root {
+  --Genral-color: #282c34;
+  --my-color: gold;
+  --his-color: blue;
+  --our-color: gray;
 }
 .App {
+  /* Element Variables */
+
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -12,12 +18,66 @@
   color: white;
 }
 
+@media (max-width: 350px) {
+  :root {
+    --my-color: red;
+    --his-color: black;
+  }
+}
+.App-logo {
+  height: 20vmin;
+}
 .head {
-  background-color: #282c34;
+  background-color: var(--Genral-color);
   color: white;
 }
 .head:hover {
   background-color: aquamarine;
   border-radius: 4rem;
   color: black;
+}
+.margin {
+  background-color: silver;
+  width: 80%;
+  height: 200px;
+  border: 4px var(--my-color) solid;
+  border-radius: 10px;
+  margin: 30px;
+}
+.padding {
+  text-align: center;
+  border: 1px solid var(--his-color);
+  margin: 20px;
+  padding: 10px;
+  align-items: center;
+}
+
+.gird {
+  border: 1px seagreen dotted;
+  padding: 20px;
+  border-radius: 9px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  gap: 10px;
+  text-align: center;
+}
+.one {
+  background-color: aqua;
+  border-radius: 8px;
+  padding: 9px;
+}
+.two {
+  background-color: saddlebrown;
+}
+.three {
+  background-color: springgreen;
+}
+.four {
+  background-color: green;
+}
+.five {
+  background-color: red;
+}
+.six {
+  background-color: black;
 }
