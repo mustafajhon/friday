@@ -1,83 +1,32 @@
-/* Universal Variables */
-:root {
-  --Genral-color: #282c34;
-  --my-color: gold;
-  --his-color: blue;
-  --our-color: gray;
+body {
+  margin: 0;
 }
 .App {
-  /* Element Variables */
-
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: baseline;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-@media (max-width: 350px) {
-  :root {
-    --my-color: red;
-    --his-color: black;
-  }
-}
-.App-logo {
-  height: 20vmin;
-}
-.head {
-  background-color: var(--Genral-color);
-  color: white;
-}
-.head:hover {
-  background-color: aquamarine;
-  border-radius: 4rem;
-  color: black;
-}
-.margin {
-  background-color: silver;
-  width: 80%;
-  height: 200px;
-  border: 4px var(--my-color) solid;
-  border-radius: 10px;
-  margin: 30px;
-}
-.padding {
-  text-align: center;
-  border: 1px solid var(--his-color);
-  margin: 20px;
-  padding: 10px;
-  align-items: center;
-}
-
-.gird {
-  border: 1px seagreen dotted;
-  padding: 20px;
-  border-radius: 9px;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Quicksand" sans-serif;
+  font-weight: bold;
+  font-size: 20px;
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 100px;
   gap: 10px;
-  text-align: center;
+
+  padding: 10px;
+  box-sizing: border-box;
 }
-.one {
-  background-color: aqua;
-  border-radius: 8px;
-  padding: 9px;
+
+.App div {
+  padding: 10px;
+  border: 1px solid black;
 }
-.two {
-  background-color: saddlebrown;
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
-.three {
-  background-color: springgreen;
-}
-.four {
-  background-color: green;
-}
-.five {
-  background-color: red;
-}
-.six {
-  background-color: black;
+.content-large {
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
